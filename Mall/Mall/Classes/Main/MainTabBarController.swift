@@ -11,6 +11,9 @@ import Foundation
 import UIKit
 import CYLTabBarController
 
+/**
+ * 主框架
+ */
 class MainTabBarController: CYLTabBarController {
     
     // MARK: - Life cycle

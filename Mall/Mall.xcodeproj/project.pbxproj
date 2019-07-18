@@ -24,6 +24,7 @@
 		5E6A24CD22E0688000A85826 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A24CC22E0688000A85826 /* MessageViewController.swift */; };
 		5E6A24D322E069F500A85826 /* MessageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A24D222E069F500A85826 /* MessageListCell.swift */; };
 		5E6A24D622E0720700A85826 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A24D522E0720700A85826 /* MainTabBarController.swift */; };
+		5E6A24D822E0755100A85826 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A24D722E0755100A85826 /* MainNavigationController.swift */; };
 		DA2F430FD7B78C448D71B301 /* Pods_Mall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC051DCEE19BBBA8AB570A10 /* Pods_Mall.framework */; };
 		DF4183DF2463E920D924D427 /* Pods_MallTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B9C3BFD502872EF478C19D /* Pods_MallTests.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		5E6A24CC22E0688000A85826 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		5E6A24D222E069F500A85826 /* MessageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListCell.swift; sourceTree = "<group>"; };
 		5E6A24D522E0720700A85826 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		5E6A24D722E0755100A85826 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		6F65C7D569A21834124A0F7B /* Pods_MallUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MallUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		799DA0036FB99B3DC065B43A /* Pods-Mall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mall.release.xcconfig"; path = "Target Support Files/Pods-Mall/Pods-Mall.release.xcconfig"; sourceTree = "<group>"; };
 		85F498A43D4BF6C4FD60C637 /* Pods-MallUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallUITests.debug.xcconfig"; path = "Target Support Files/Pods-MallUITests/Pods-MallUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -351,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				5E6A24D522E0720700A85826 /* MainTabBarController.swift */,
+				5E6A24D722E0755100A85826 /* MainNavigationController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -591,6 +594,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E6A24D822E0755100A85826 /* MainNavigationController.swift in Sources */,
 				5E6A24C422E0680400A85826 /* FunctionViewController.swift in Sources */,
 				5E6A24D322E069F500A85826 /* MessageListCell.swift in Sources */,
 				5E6A24D622E0720700A85826 /* MainTabBarController.swift in Sources */,
