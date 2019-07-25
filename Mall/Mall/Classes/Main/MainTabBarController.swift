@@ -58,13 +58,17 @@ extension CYLTabBarController {
         var vcs = [UIViewController]()
         var dicts = [[String: String]]()
         
-        let remind = MessageViewController()
+        guard let remind = UIStoryboard.init(name: BFStoreboardName.message.rawValue, bundle: nil).instantiateInitialViewController() else {
+            return
+        }
         vcs += [remind]
         dicts += [[CYLTabBarItemTitle: "消息",
                    CYLTabBarItemImage: "tabbar_message_n",
                    CYLTabBarItemSelectedImage: "tabbar_message_h_b"]]
         
-        let function = FunctionViewController()
+        guard let function = UIStoryboard.init(name: BFStoreboardName.function.rawValue, bundle: nil).instantiateInitialViewController() else {
+            return
+        }
         vcs += [function]
         dicts += [[CYLTabBarItemTitle: "功能",
                    CYLTabBarItemImage: "tabbar_function_n",
@@ -78,7 +82,9 @@ extension CYLTabBarController {
                    CYLTabBarItemImage: "tabbar_customerservice_n",
                    CYLTabBarItemSelectedImage: "tabbar_customerservice_h_b"]]
         
-        let mine = MineViewController()
+        guard let mine = UIStoryboard.init(name: BFStoreboardName.mine.rawValue, bundle: nil).instantiateInitialViewController() else {
+            return
+        }
         vcs += [mine]
         dicts += [[CYLTabBarItemTitle: "我的",
                    CYLTabBarItemImage: "tabbar_mine_n",

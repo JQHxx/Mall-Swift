@@ -13,3 +13,8 @@
 @_exported import Alamofire
 @_exported import SnapKit
 
+// MARK: - 常量
+// 导航栏(动态获取主要为了适配iphone X)
+let kNavigationBarH : CGFloat = 44.0
+let kTabBarHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height > 20 ? 83 : 49
+let kStatusBarH : CGFloat = UIApplication.shared.statusBarFrame.size.height

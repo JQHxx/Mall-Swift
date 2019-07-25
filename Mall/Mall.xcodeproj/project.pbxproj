@@ -26,6 +26,9 @@
 		5E6A24D622E0720700A85826 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A24D522E0720700A85826 /* MainTabBarController.swift */; };
 		5E6A24D822E0755100A85826 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A24D722E0755100A85826 /* MainNavigationController.swift */; };
 		5EEA9CE422E9A160007BA06A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE322E9A160007BA06A /* UIViewExtension.swift */; };
+		5EEA9CE622E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE522E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift */; };
+		5EEA9CE822E9A70C007BA06A /* BFBaseWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE722E9A70C007BA06A /* BFBaseWebViewVC.swift */; };
+		5EEA9CEA22E9A8AF007BA06A /* BFStoreboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE922E9A8AF007BA06A /* BFStoreboardName.swift */; };
 		DA2F430FD7B78C448D71B301 /* Pods_Mall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC051DCEE19BBBA8AB570A10 /* Pods_Mall.framework */; };
 		DF4183DF2463E920D924D427 /* Pods_MallTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B9C3BFD502872EF478C19D /* Pods_MallTests.framework */; };
 /* End PBXBuildFile section */
@@ -76,6 +79,9 @@
 		5E6A24D722E0755100A85826 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		5E6A24D922E07AD300A85826 /* Mall_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mall_bridge.h; sourceTree = "<group>"; };
 		5EEA9CE322E9A160007BA06A /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		5EEA9CE522E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFWKWebViewDelegateVC.swift; sourceTree = "<group>"; };
+		5EEA9CE722E9A70C007BA06A /* BFBaseWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFBaseWebViewVC.swift; sourceTree = "<group>"; };
+		5EEA9CE922E9A8AF007BA06A /* BFStoreboardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFStoreboardName.swift; sourceTree = "<group>"; };
 		6F65C7D569A21834124A0F7B /* Pods_MallUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MallUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		799DA0036FB99B3DC065B43A /* Pods-Mall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mall.release.xcconfig"; path = "Target Support Files/Pods-Mall/Pods-Mall.release.xcconfig"; sourceTree = "<group>"; };
 		85F498A43D4BF6C4FD60C637 /* Pods-MallUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallUITests.debug.xcconfig"; path = "Target Support Files/Pods-MallUITests/Pods-MallUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -245,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				5E6A24AE22E0660600A85826 /* Network */,
+				5EEA9CE922E9A8AF007BA06A /* BFStoreboardName.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -359,6 +366,8 @@
 			children = (
 				5E6A24D522E0720700A85826 /* MainTabBarController.swift */,
 				5E6A24D722E0755100A85826 /* MainNavigationController.swift */,
+				5EEA9CE522E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift */,
+				5EEA9CE722E9A70C007BA06A /* BFBaseWebViewVC.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -604,10 +613,13 @@
 				5EEA9CE422E9A160007BA06A /* UIViewExtension.swift in Sources */,
 				5E6A24D322E069F500A85826 /* MessageListCell.swift in Sources */,
 				5E6A24D622E0720700A85826 /* MainTabBarController.swift in Sources */,
+				5EEA9CEA22E9A8AF007BA06A /* BFStoreboardName.swift in Sources */,
+				5EEA9CE622E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift in Sources */,
 				5E6A24B522E0668A00A85826 /* Global.swift in Sources */,
 				5E48613922DC27CA00A99B31 /* AppDelegate.swift in Sources */,
 				5E6A24C722E0683700A85826 /* ServerViewController.swift in Sources */,
 				5E6A24B322E0667000A85826 /* Config.swift in Sources */,
+				5EEA9CE822E9A70C007BA06A /* BFBaseWebViewVC.swift in Sources */,
 				5E6A24CA22E0685700A85826 /* MineViewController.swift in Sources */,
 				5E6A24CD22E0688000A85826 /* MessageViewController.swift in Sources */,
 			);
