@@ -18,3 +18,21 @@
 let kNavigationBarH : CGFloat = 44.0
 let kTabBarHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height > 20 ? 83 : 49
 let kStatusBarH : CGFloat = UIApplication.shared.statusBarFrame.size.height
+
+// MARK: - 主线程上刷新UI
+func dispatch_sync_safely_main_queue(_ block: ()->()) {
+    if Thread.isMainThread {
+        block()
+    } else {
+        DispatchQueue.main.sync {
+            block()
+        }
+    }
+}
+
+// 延迟调用
+func dispatch_delay(time: TimeInterval, closure: @escaping () -> ()) {
+    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + time, execute: {
+        closure()
+    })
+}
