@@ -64,19 +64,21 @@ extension CYLTabBarController {
                    CYLTabBarItemImage: "tabbar_message_n",
                    CYLTabBarItemSelectedImage: "tabbar_message_h_b"]]
         
-        let function = MessageViewController()
+        let function = FunctionViewController()
         vcs += [function]
         dicts += [[CYLTabBarItemTitle: "功能",
                    CYLTabBarItemImage: "tabbar_function_n",
                    CYLTabBarItemSelectedImage: "tabbar_function_h_b"]]
         
-        let server = MessageViewController()
-        vcs += [server]
+       
+        let server = ServerViewController()
+        let serverNav = MainNavigationController.init(rootViewController: server)
+        vcs += [serverNav]
         dicts += [[CYLTabBarItemTitle: "客服",
                    CYLTabBarItemImage: "tabbar_customerservice_n",
                    CYLTabBarItemSelectedImage: "tabbar_customerservice_h_b"]]
         
-        let mine = MessageViewController()
+        let mine = MineViewController()
         vcs += [mine]
         dicts += [[CYLTabBarItemTitle: "我的",
                    CYLTabBarItemImage: "tabbar_mine_n",
