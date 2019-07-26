@@ -25,6 +25,13 @@
 		5E6A24D322E069F500A85826 /* MessageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A24D222E069F500A85826 /* MessageListCell.swift */; };
 		5E6A24D622E0720700A85826 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A24D522E0720700A85826 /* MainTabBarController.swift */; };
 		5E6A24D822E0755100A85826 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A24D722E0755100A85826 /* MainNavigationController.swift */; };
+		5E87299F22EA85B60035208B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E87299E22EA85B60035208B /* UIViewControllerExtension.swift */; };
+		5E8729A222EA87780035208B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8729A122EA87780035208B /* LoginViewController.swift */; };
+		5E8729A422EA87930035208B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8729A322EA87930035208B /* RegisterViewController.swift */; };
+		5E8729A622EA8A3A0035208B /* BFNameSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8729A522EA8A3A0035208B /* BFNameSpace.swift */; };
+		5E8729A822EA8ADA0035208B /* BFBarista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8729A722EA8ADA0035208B /* BFBarista.swift */; };
+		5E8729AA22EA8B360035208B /* AppKeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8729A922EA8B360035208B /* AppKeyChain.swift */; };
+		5E8729AC22EA8BB10035208B /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8729AB22EA8BB10035208B /* UserDefaultsExtension.swift */; };
 		5EEA9CE422E9A160007BA06A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE322E9A160007BA06A /* UIViewExtension.swift */; };
 		5EEA9CE622E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE522E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift */; };
 		5EEA9CE822E9A70C007BA06A /* BFBaseWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE722E9A70C007BA06A /* BFBaseWebViewVC.swift */; };
@@ -84,6 +91,14 @@
 		5E6A24D522E0720700A85826 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		5E6A24D722E0755100A85826 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		5E6A24D922E07AD300A85826 /* Mall_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mall_bridge.h; sourceTree = "<group>"; };
+		5E87299E22EA85B60035208B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		5E8729A122EA87780035208B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5E8729A322EA87930035208B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		5E8729A522EA8A3A0035208B /* BFNameSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFNameSpace.swift; sourceTree = "<group>"; };
+		5E8729A722EA8ADA0035208B /* BFBarista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFBarista.swift; sourceTree = "<group>"; };
+		5E8729A922EA8B360035208B /* AppKeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKeyChain.swift; sourceTree = "<group>"; };
+		5E8729AB22EA8BB10035208B /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
+		5E8729AD22EA8F910035208B /* Mall.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mall.entitlements; sourceTree = "<group>"; };
 		5EEA9CE322E9A160007BA06A /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5EEA9CE522E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFWKWebViewDelegateVC.swift; sourceTree = "<group>"; };
 		5EEA9CE722E9A70C007BA06A /* BFBaseWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFBaseWebViewVC.swift; sourceTree = "<group>"; };
@@ -165,6 +180,7 @@
 		5E48613722DC27CA00A99B31 /* Mall */ = {
 			isa = PBXGroup;
 			children = (
+				5E8729AD22EA8F910035208B /* Mall.entitlements */,
 				5E6A24B622E0670C00A85826 /* Resources */,
 				5E48616622DC283700A99B31 /* Classes */,
 				5E48613822DC27CA00A99B31 /* AppDelegate.swift */,
@@ -211,6 +227,7 @@
 		5E6A24A822E0659900A85826 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				5E8729A022EA875A0035208B /* Login */,
 				5E6A24AC22E065E100A85826 /* Function */,
 				5E6A24AB22E065CC00A85826 /* Server */,
 				5E6A24AA22E065BE00A85826 /* Mine */,
@@ -265,6 +282,9 @@
 				5E6A24AE22E0660600A85826 /* Network */,
 				5EEA9CE922E9A8AF007BA06A /* BFStoreboardName.swift */,
 				5EEA9CF522E9AC6C007BA06A /* BFunction.swift */,
+				5E8729A522EA8A3A0035208B /* BFNameSpace.swift */,
+				5E8729A722EA8ADA0035208B /* BFBarista.swift */,
+				5E8729A922EA8B360035208B /* AppKeyChain.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -285,6 +305,8 @@
 			isa = PBXGroup;
 			children = (
 				5EEA9CE322E9A160007BA06A /* UIViewExtension.swift */,
+				5E87299E22EA85B60035208B /* UIViewControllerExtension.swift */,
+				5E8729AB22EA8BB10035208B /* UserDefaultsExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -390,6 +412,15 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		5E8729A022EA875A0035208B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5E8729A122EA87780035208B /* LoginViewController.swift */,
+				5E8729A322EA87930035208B /* RegisterViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		D13F8DD9DF2DC81BACAD9EEE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -475,6 +506,11 @@
 				TargetAttributes = {
 					5E48613422DC27CA00A99B31 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					5E48614822DC27CD00A99B31 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -626,18 +662,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E8729A822EA8ADA0035208B /* BFBarista.swift in Sources */,
 				5EEA9CEE22E9AB53007BA06A /* DDErrorModel.swift in Sources */,
 				5EEA9CF022E9AB7E007BA06A /* DDRequestModel.swift in Sources */,
 				5E6A24D822E0755100A85826 /* MainNavigationController.swift in Sources */,
 				5E6A24C422E0680400A85826 /* FunctionViewController.swift in Sources */,
 				5EEA9CE422E9A160007BA06A /* UIViewExtension.swift in Sources */,
+				5E87299F22EA85B60035208B /* UIViewControllerExtension.swift in Sources */,
+				5E8729AC22EA8BB10035208B /* UserDefaultsExtension.swift in Sources */,
+				5E8729AA22EA8B360035208B /* AppKeyChain.swift in Sources */,
 				5E6A24D322E069F500A85826 /* MessageListCell.swift in Sources */,
 				5EEA9CF622E9AC6C007BA06A /* BFunction.swift in Sources */,
 				5EEA9CEC22E9AAF5007BA06A /* API.swift in Sources */,
+				5E8729A622EA8A3A0035208B /* BFNameSpace.swift in Sources */,
 				5E6A24D622E0720700A85826 /* MainTabBarController.swift in Sources */,
+				5E8729A222EA87780035208B /* LoginViewController.swift in Sources */,
 				5EEA9CEA22E9A8AF007BA06A /* BFStoreboardName.swift in Sources */,
 				5EEA9CE622E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift in Sources */,
 				5E6A24B522E0668A00A85826 /* Global.swift in Sources */,
+				5E8729A422EA87930035208B /* RegisterViewController.swift in Sources */,
 				5E48613922DC27CA00A99B31 /* AppDelegate.swift in Sources */,
 				5E6A24C722E0683700A85826 /* ServerViewController.swift in Sources */,
 				5E6A24B322E0667000A85826 /* Config.swift in Sources */,
@@ -813,6 +856,7 @@
 			baseConfigurationReference = B478AC307624D4C6A6C249E9 /* Pods-Mall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Mall/Mall.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SYZGGW5E8S;
 				INFOPLIST_FILE = Mall/Info.plist;
@@ -833,6 +877,7 @@
 			baseConfigurationReference = 799DA0036FB99B3DC065B43A /* Pods-Mall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Mall/Mall.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SYZGGW5E8S;
 				INFOPLIST_FILE = Mall/Info.plist;

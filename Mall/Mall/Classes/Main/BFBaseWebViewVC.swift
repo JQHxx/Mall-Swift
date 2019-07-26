@@ -52,7 +52,7 @@ class BFBaseWebViewVC: UIViewController {
     private func setupWKWebView() {
         let config = WKWebViewConfiguration()
         config.userContentController = userContentController
-        let rect = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - kStatusBarH - kNavigationBarH)
+        let rect = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - kStatusHeight - kNavBarHeight)
         webView = WKWebView.init(frame: rect, configuration: config)
         webView.navigationDelegate = self
         webView.addObserver(self, forKeyPath: "estimatedProgress", options: NSKeyValueObservingOptions.new, context: nil)

@@ -9,11 +9,85 @@
 import UIKit
 
 class FunctionViewController: UIViewController {
+    
+    // 目标VC
+    private var targetVC: UIViewController?
+    // 目标参数
+    private var targetParams: [String: Any] = [String: Any]()
+    // 跳转类型
+    private var jumpType = 0
+    // 当前VC
+    private var currentVC: UIViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        viewBindEvents()
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 
+}
+
+// MARK: - 登录过期处理逻辑
+extension FunctionViewController {
+    
+    func viewBindEvents() {
+        // 检测到未登录调用
+        NotificationCenter.default.addObserver(self, selector: #selector(loginAction(noti:)), name: NSNotification.Name.init("Login"), object: nil)
+        // 登录成功时调用
+        NotificationCenter.default.addObserver(self, selector: #selector(loginSuccess(noti:)), name: NSNotification.Name.init("LoginSuccess"), object: nil)
+    }
+    
+    // 全局处理登录
+    @objc func loginAction(noti: Notification) {
+        guard let topVC = self.topViewController() else {
+            return
+        }
+        currentVC = topVC
+        debugPrint(noti.object ?? [:])
+        let notiInfo = noti.object ?? [:]
+        if let tempNotiInfo = notiInfo as? [String: Any] {
+            targetParams = tempNotiInfo
+            jumpType = (tempNotiInfo["jumpType"] as? Int) ?? 0
+            targetVC = tempNotiInfo["targetVC"] as? UIViewController
+        } else { // 置空
+            targetParams = [:]
+            jumpType = 1
+            targetVC = nil
+        }
+        
+        if let _ = topVC as? LoginViewController {
+            debugPrint("LoginVC")
+            return
+        }
+        let loginNav = MainNavigationController(rootViewController: LoginViewController())
+        self.present(loginNav, animated: true) {}
+        
+    }
+    
+    @objc func loginSuccess(noti: Notification) {
+        // 要刷新页面
+        guard let tempCurrentVC = currentVC else {
+            return
+        }
+        
+        if jumpType == 1 { // push跳转
+            guard let tempTargetVC = targetVC else {
+                return
+            }
+            tempCurrentVC.navigationController?.pushViewController(tempTargetVC, animated: true)
+            
+        } else if jumpType == 2 { // modal 跳转
+            
+        } else { // 进入目标VC才跳转（登录过期）直接刷新页面
+            /*
+            if tempCurrentVC.isKind(of: HFCollectionListMainViewController.self) {
+                (tempCurrentVC as? HFCollectionListMainViewController )?.refreshSubViewDatas(param: targetParams)
+            }
+             */
+        }
+        
+    }
 }
