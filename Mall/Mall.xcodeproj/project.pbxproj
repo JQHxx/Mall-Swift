@@ -35,6 +35,8 @@
 		5E8729AF22EAA6590035208B /* AttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8729AE22EAA6590035208B /* AttributedStringExtension.swift */; };
 		5E8729B222EAB2970035208B /* MineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8729B122EAB2970035208B /* MineHeaderView.swift */; };
 		5E8729B422EAB2A50035208B /* MineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E8729B322EAB2A50035208B /* MineHeaderView.xib */; };
+		5E8729B722EAB7F80035208B /* MineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8729B522EAB7F80035208B /* MineCell.swift */; };
+		5E8729B822EAB7F80035208B /* MineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E8729B622EAB7F80035208B /* MineCell.xib */; };
 		5EEA9CE422E9A160007BA06A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE322E9A160007BA06A /* UIViewExtension.swift */; };
 		5EEA9CE622E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE522E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift */; };
 		5EEA9CE822E9A70C007BA06A /* BFBaseWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE722E9A70C007BA06A /* BFBaseWebViewVC.swift */; };
@@ -105,6 +107,8 @@
 		5E8729AE22EAA6590035208B /* AttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringExtension.swift; sourceTree = "<group>"; };
 		5E8729B122EAB2970035208B /* MineHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineHeaderView.swift; sourceTree = "<group>"; };
 		5E8729B322EAB2A50035208B /* MineHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineHeaderView.xib; sourceTree = "<group>"; };
+		5E8729B522EAB7F80035208B /* MineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineCell.swift; sourceTree = "<group>"; };
+		5E8729B622EAB7F80035208B /* MineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineCell.xib; sourceTree = "<group>"; };
 		5EEA9CE322E9A160007BA06A /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5EEA9CE522E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFWKWebViewDelegateVC.swift; sourceTree = "<group>"; };
 		5EEA9CE722E9A70C007BA06A /* BFBaseWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFBaseWebViewVC.swift; sourceTree = "<group>"; };
@@ -434,6 +438,8 @@
 			children = (
 				5E8729B122EAB2970035208B /* MineHeaderView.swift */,
 				5E8729B322EAB2A50035208B /* MineHeaderView.xib */,
+				5E8729B522EAB7F80035208B /* MineCell.swift */,
+				5E8729B622EAB7F80035208B /* MineCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -564,6 +570,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E8729B822EAB7F80035208B /* MineCell.xib in Resources */,
 				5E8729B422EAB2A50035208B /* MineHeaderView.xib in Resources */,
 				5E48614322DC27CD00A99B31 /* LaunchScreen.storyboard in Resources */,
 				5E6A24B922E0676C00A85826 /* Function.storyboard in Resources */,
@@ -688,6 +695,7 @@
 				5E6A24C422E0680400A85826 /* FunctionViewController.swift in Sources */,
 				5EEA9CE422E9A160007BA06A /* UIViewExtension.swift in Sources */,
 				5E87299F22EA85B60035208B /* UIViewControllerExtension.swift in Sources */,
+				5E8729B722EAB7F80035208B /* MineCell.swift in Sources */,
 				5E8729AC22EA8BB10035208B /* UserDefaultsExtension.swift in Sources */,
 				5E8729B222EAB2970035208B /* MineHeaderView.swift in Sources */,
 				5E8729AA22EA8B360035208B /* AppKeyChain.swift in Sources */,

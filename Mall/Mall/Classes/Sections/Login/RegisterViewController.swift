@@ -8,13 +8,11 @@
 
 import UIKit
 
+// MARK: - 注册
 class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
 }

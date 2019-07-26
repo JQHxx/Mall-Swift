@@ -8,13 +8,12 @@
 
 import UIKit
 
+// MARK: - 登录
 class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
 }
