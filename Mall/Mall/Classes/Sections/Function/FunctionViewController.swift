@@ -24,6 +24,42 @@ class FunctionViewController: UIViewController {
         viewBindEvents()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        let jsonString = "{\"name\":\"zhangsan\",\"age\": 18}"
+        
+        let jsonData = jsonString.data(using: String.Encoding.utf8, allowLossyConversion: false) ?? Data()
+        guard let json = try? JSONSerialization.jsonObject(with: jsonData, options: .mutableContainers) else {
+            return
+        }
+        
+        debugPrint(JSON.init(parseJSON: jsonString))
+        
+        
+//        let dict = ["name": "123"]
+//        let json = self.getJSONStringFromDictionary(dictionary: dict)
+        debugPrint(json)
+        
+    }
+    
+    /**
+     字典转换为JSONString
+     
+     - parameter dictionary: 字典参数
+     
+     - returns: JSONString
+     */
+    func getJSONStringFromDictionary(dictionary: [String: Any]) -> String {
+        if (!JSONSerialization.isValidJSONObject(dictionary)) {
+            print("无法解析出JSONString")
+            return ""
+        }
+        let data : NSData! = try? JSONSerialization.data(withJSONObject: dictionary, options: []) as NSData?
+        let JSONString = NSString(data:data as Data,encoding: String.Encoding.utf8.rawValue)
+        return JSONString! as String
+        
+    }
+    
     deinit {
         NotificationCenter.default.removeObserver(self)
     }

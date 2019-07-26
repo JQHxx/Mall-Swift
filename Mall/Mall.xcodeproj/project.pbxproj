@@ -32,6 +32,7 @@
 		5E8729A822EA8ADA0035208B /* BFBarista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8729A722EA8ADA0035208B /* BFBarista.swift */; };
 		5E8729AA22EA8B360035208B /* AppKeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8729A922EA8B360035208B /* AppKeyChain.swift */; };
 		5E8729AC22EA8BB10035208B /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8729AB22EA8BB10035208B /* UserDefaultsExtension.swift */; };
+		5E8729AF22EAA6590035208B /* AttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8729AE22EAA6590035208B /* AttributedStringExtension.swift */; };
 		5EEA9CE422E9A160007BA06A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE322E9A160007BA06A /* UIViewExtension.swift */; };
 		5EEA9CE622E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE522E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift */; };
 		5EEA9CE822E9A70C007BA06A /* BFBaseWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE722E9A70C007BA06A /* BFBaseWebViewVC.swift */; };
@@ -99,6 +100,7 @@
 		5E8729A922EA8B360035208B /* AppKeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKeyChain.swift; sourceTree = "<group>"; };
 		5E8729AB22EA8BB10035208B /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
 		5E8729AD22EA8F910035208B /* Mall.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mall.entitlements; sourceTree = "<group>"; };
+		5E8729AE22EAA6590035208B /* AttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringExtension.swift; sourceTree = "<group>"; };
 		5EEA9CE322E9A160007BA06A /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5EEA9CE522E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFWKWebViewDelegateVC.swift; sourceTree = "<group>"; };
 		5EEA9CE722E9A70C007BA06A /* BFBaseWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFBaseWebViewVC.swift; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 				5EEA9CE322E9A160007BA06A /* UIViewExtension.swift */,
 				5E87299E22EA85B60035208B /* UIViewControllerExtension.swift */,
 				5E8729AB22EA8BB10035208B /* UserDefaultsExtension.swift */,
+				5E8729AE22EAA6590035208B /* AttributedStringExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -664,6 +667,7 @@
 			files = (
 				5E8729A822EA8ADA0035208B /* BFBarista.swift in Sources */,
 				5EEA9CEE22E9AB53007BA06A /* DDErrorModel.swift in Sources */,
+				5E8729AF22EAA6590035208B /* AttributedStringExtension.swift in Sources */,
 				5EEA9CF022E9AB7E007BA06A /* DDRequestModel.swift in Sources */,
 				5E6A24D822E0755100A85826 /* MainNavigationController.swift in Sources */,
 				5E6A24C422E0680400A85826 /* FunctionViewController.swift in Sources */,
