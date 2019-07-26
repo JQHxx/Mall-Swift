@@ -118,12 +118,18 @@ extension DDHTTPRequest {
         debugPrint("错误码 ===》" + "\(error._code)" + "错误描述 ===》" + error.localizedDescription)
         
         switch error._code {
-        case -1009: BFunction.shared.showErrorMessage("似乎已和网络断开了连接")
-        case -1004: BFunction.shared.showErrorMessage("与服务器断开连接")
-        case -999 : debugPrint("服务器主动断开网络请求")
-        case -1001: BFunction.shared.showErrorMessage("请求超时")
-        case -1011: BFunction.shared.showErrorMessage("攻城狮正在抢修服务器...")
-        default   : BFunction.shared.showErrorMessage("您的网络好像有点问题")
+        case -1009:
+            BFunction.shared.showErrorMessage("似乎已和网络断开了连接")
+        case -1004:
+            BFunction.shared.showErrorMessage("与服务器断开连接")
+        case -999 :
+            debugPrint("服务器主动断开网络请求")
+        case -1001: // 说明是弱网状态
+            BFunction.shared.showErrorMessage("请求超时")
+        case -1011:
+            BFunction.shared.showErrorMessage("攻城狮正在抢修服务器...")
+        default   :
+            BFunction.shared.showErrorMessage("您的网络好像有点问题")
         }
     }
 }
