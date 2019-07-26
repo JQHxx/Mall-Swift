@@ -33,6 +33,8 @@
 		5E8729AA22EA8B360035208B /* AppKeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8729A922EA8B360035208B /* AppKeyChain.swift */; };
 		5E8729AC22EA8BB10035208B /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8729AB22EA8BB10035208B /* UserDefaultsExtension.swift */; };
 		5E8729AF22EAA6590035208B /* AttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8729AE22EAA6590035208B /* AttributedStringExtension.swift */; };
+		5E8729B222EAB2970035208B /* MineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8729B122EAB2970035208B /* MineHeaderView.swift */; };
+		5E8729B422EAB2A50035208B /* MineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E8729B322EAB2A50035208B /* MineHeaderView.xib */; };
 		5EEA9CE422E9A160007BA06A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE322E9A160007BA06A /* UIViewExtension.swift */; };
 		5EEA9CE622E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE522E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift */; };
 		5EEA9CE822E9A70C007BA06A /* BFBaseWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE722E9A70C007BA06A /* BFBaseWebViewVC.swift */; };
@@ -101,6 +103,8 @@
 		5E8729AB22EA8BB10035208B /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
 		5E8729AD22EA8F910035208B /* Mall.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mall.entitlements; sourceTree = "<group>"; };
 		5E8729AE22EAA6590035208B /* AttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringExtension.swift; sourceTree = "<group>"; };
+		5E8729B122EAB2970035208B /* MineHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineHeaderView.swift; sourceTree = "<group>"; };
+		5E8729B322EAB2A50035208B /* MineHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineHeaderView.xib; sourceTree = "<group>"; };
 		5EEA9CE322E9A160007BA06A /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5EEA9CE522E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFWKWebViewDelegateVC.swift; sourceTree = "<group>"; };
 		5EEA9CE722E9A70C007BA06A /* BFBaseWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFBaseWebViewVC.swift; sourceTree = "<group>"; };
@@ -253,6 +257,7 @@
 		5E6A24AA22E065BE00A85826 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				5E8729B022EAB2760035208B /* View */,
 				5E6A24C922E0685700A85826 /* MineViewController.swift */,
 			);
 			path = Mine;
@@ -424,6 +429,15 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		5E8729B022EAB2760035208B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5E8729B122EAB2970035208B /* MineHeaderView.swift */,
+				5E8729B322EAB2A50035208B /* MineHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D13F8DD9DF2DC81BACAD9EEE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -550,6 +564,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E8729B422EAB2A50035208B /* MineHeaderView.xib in Resources */,
 				5E48614322DC27CD00A99B31 /* LaunchScreen.storyboard in Resources */,
 				5E6A24B922E0676C00A85826 /* Function.storyboard in Resources */,
 				5E6A24BD22E0678D00A85826 /* Mine.storyboard in Resources */,
@@ -674,6 +689,7 @@
 				5EEA9CE422E9A160007BA06A /* UIViewExtension.swift in Sources */,
 				5E87299F22EA85B60035208B /* UIViewControllerExtension.swift in Sources */,
 				5E8729AC22EA8BB10035208B /* UserDefaultsExtension.swift in Sources */,
+				5E8729B222EAB2970035208B /* MineHeaderView.swift in Sources */,
 				5E8729AA22EA8B360035208B /* AppKeyChain.swift in Sources */,
 				5E6A24D322E069F500A85826 /* MessageListCell.swift in Sources */,
 				5EEA9CF622E9AC6C007BA06A /* BFunction.swift in Sources */,
