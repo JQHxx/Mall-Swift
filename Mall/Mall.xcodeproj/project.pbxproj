@@ -37,6 +37,8 @@
 		5E8729B422EAB2A50035208B /* MineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E8729B322EAB2A50035208B /* MineHeaderView.xib */; };
 		5E8729B722EAB7F80035208B /* MineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8729B522EAB7F80035208B /* MineCell.swift */; };
 		5E8729B822EAB7F80035208B /* MineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E8729B622EAB7F80035208B /* MineCell.xib */; };
+		5EBBB6F622FD5815005BF393 /* EmptyViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBBB6F522FD5815005BF393 /* EmptyViewProtocol.swift */; };
+		5EBBB6F822FD58BF005BF393 /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBBB6F722FD58BF005BF393 /* DispatchQueueExtension.swift */; };
 		5EEA9CE422E9A160007BA06A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE322E9A160007BA06A /* UIViewExtension.swift */; };
 		5EEA9CE622E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE522E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift */; };
 		5EEA9CE822E9A70C007BA06A /* BFBaseWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE722E9A70C007BA06A /* BFBaseWebViewVC.swift */; };
@@ -109,6 +111,8 @@
 		5E8729B322EAB2A50035208B /* MineHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineHeaderView.xib; sourceTree = "<group>"; };
 		5E8729B522EAB7F80035208B /* MineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineCell.swift; sourceTree = "<group>"; };
 		5E8729B622EAB7F80035208B /* MineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineCell.xib; sourceTree = "<group>"; };
+		5EBBB6F522FD5815005BF393 /* EmptyViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewProtocol.swift; sourceTree = "<group>"; };
+		5EBBB6F722FD58BF005BF393 /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
 		5EEA9CE322E9A160007BA06A /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5EEA9CE522E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFWKWebViewDelegateVC.swift; sourceTree = "<group>"; };
 		5EEA9CE722E9A70C007BA06A /* BFBaseWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFBaseWebViewVC.swift; sourceTree = "<group>"; };
@@ -319,6 +323,8 @@
 				5E87299E22EA85B60035208B /* UIViewControllerExtension.swift */,
 				5E8729AB22EA8BB10035208B /* UserDefaultsExtension.swift */,
 				5E8729AE22EAA6590035208B /* AttributedStringExtension.swift */,
+				5EBBB6F522FD5815005BF393 /* EmptyViewProtocol.swift */,
+				5EBBB6F722FD58BF005BF393 /* DispatchQueueExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -696,6 +702,7 @@
 				5EEA9CE422E9A160007BA06A /* UIViewExtension.swift in Sources */,
 				5E87299F22EA85B60035208B /* UIViewControllerExtension.swift in Sources */,
 				5E8729B722EAB7F80035208B /* MineCell.swift in Sources */,
+				5EBBB6F822FD58BF005BF393 /* DispatchQueueExtension.swift in Sources */,
 				5E8729AC22EA8BB10035208B /* UserDefaultsExtension.swift in Sources */,
 				5E8729B222EAB2970035208B /* MineHeaderView.swift in Sources */,
 				5E8729AA22EA8B360035208B /* AppKeyChain.swift in Sources */,
@@ -713,6 +720,7 @@
 				5E6A24C722E0683700A85826 /* ServerViewController.swift in Sources */,
 				5E6A24B322E0667000A85826 /* Config.swift in Sources */,
 				5EEA9CE822E9A70C007BA06A /* BFBaseWebViewVC.swift in Sources */,
+				5EBBB6F622FD5815005BF393 /* EmptyViewProtocol.swift in Sources */,
 				5EEA9CF222E9ABA0007BA06A /* DDHTTPRequest.swift in Sources */,
 				5E6A24CA22E0685700A85826 /* MineViewController.swift in Sources */,
 				5EEA9CF422E9ABCC007BA06A /* HTTPClient.swift in Sources */,
