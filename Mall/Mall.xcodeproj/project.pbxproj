@@ -225,7 +225,7 @@
 			children = (
 				5E6A24D422E071FC00A85826 /* Main */,
 				5E6A24B122E0665F00A85826 /* Config */,
-				5E6A24B022E0664300A85826 /* ThreePart */,
+				5E6A24B022E0664300A85826 /* ThirdPart */,
 				5E6A24AF22E0661C00A85826 /* Extension */,
 				5E6A24AD22E065F900A85826 /* Common */,
 				5E6A24A822E0659900A85826 /* Sections */,
@@ -323,11 +323,11 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		5E6A24B022E0664300A85826 /* ThreePart */ = {
+		5E6A24B022E0664300A85826 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = ThreePart;
+			path = ThirdPart;
 			sourceTree = "<group>";
 		};
 		5E6A24B122E0665F00A85826 /* Config */ = {
