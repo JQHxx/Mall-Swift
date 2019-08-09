@@ -26,7 +26,7 @@ public protocol BFKitCompatible {
 
 // 协议的扩展
 public  extension BFKitCompatible {
-    public var bf: BFKit<Self> {
+    var bf: BFKit<Self> {
         return BFKit(self)
     }
 }
