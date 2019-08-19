@@ -17,6 +17,9 @@ target 'Mall' do
   pod 'TYPagerController', '~> 2.1.2'
   pod 'KeychainSwift', '~> 16.0.1'
   
+  # 免费UI调试工具 https://lookin.work/
+  pod 'LookinServer', :configurations => ['Debug']
+  
   target 'MallTests' do
     inherit! :search_paths
     # Pods for testing

@@ -6,6 +6,7 @@ PODS:
   - IQKeyboardManagerSwift (6.4.0)
   - KeychainSwift (16.0.1)
   - Kingfisher (4.10.1)
+  - LookinServer (0.9.3)
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.1.17)
   - SDCycleScrollView (1.80):
@@ -24,6 +25,7 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - KeychainSwift (~> 16.0.1)
   - Kingfisher (~> 4.10.1)
+  - LookinServer
   - MBProgressHUD (~> 1.1.0)
   - MJRefresh (~> 3.1.16)
   - SDCycleScrollView (~> 1.80)
@@ -39,6 +41,7 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - KeychainSwift
     - Kingfisher
+    - LookinServer
     - MBProgressHUD
     - MJRefresh
     - SDCycleScrollView
@@ -54,6 +57,7 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: ed9b04ee0e3067ffba543283462d619f944b05e5
   KeychainSwift: 4209611373ca4a098e09b1e547eebd87c544dcc4
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  LookinServer: 44f1b5f32743dc61068a156ff86b5b47d0a82943
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: ee5b68f639775462faba4db0fd243baf4d42c2cf
   SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
@@ -63,6 +67,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   TYPagerController: 262556ecef99986d26ed77fb1288a198ed42f4af
 
-PODFILE CHECKSUM: ecafa79818d2dd91d8d72802c3046da2d40f1e00
+PODFILE CHECKSUM: f8182a8d0e851057923abd61b0a4426a148230f9
 
 COCOAPODS: 1.7.5

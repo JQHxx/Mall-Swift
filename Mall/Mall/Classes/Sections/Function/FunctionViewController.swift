@@ -22,6 +22,8 @@ class FunctionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // 内容显示到导航下的问题
+        edgesForExtendedLayout = UIRectEdge.init(rawValue: 0)
         viewBindEvents()
         
         let tempView = UIView.init()
