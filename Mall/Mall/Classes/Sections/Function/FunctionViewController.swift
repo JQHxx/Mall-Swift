@@ -23,6 +23,11 @@ class FunctionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewBindEvents()
+        
+        let tempView = UIView.init()
+        tempView.frame = CGRect.init(x: 0, y: 0, width: 100, height: 100)
+        tempView.backgroundColor = UIColor.red
+        self.view.addSubview(tempView)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -63,6 +68,12 @@ class FunctionViewController: UIViewController {
     
     deinit {
         NotificationCenter.default.removeObserver(self)
+    }
+    
+    func injected() {
+        viewDidLoad()
+        viewWillAppear(true)
+        viewDidAppear(true)
     }
 
 }

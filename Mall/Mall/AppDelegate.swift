@@ -22,6 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupRootViewController()
         self.window?.makeKeyAndVisible()
         
+        // 重要：只支持模拟器 https://blog.csdn.net/yanglei3kyou/article/details/90603961
+        #if DEBUG
+        Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle")?.load()
+        //Or for macOS:
+        Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/macOSInjection.bundle")?.load()
+        #endif
+        
         return true
     }
 
