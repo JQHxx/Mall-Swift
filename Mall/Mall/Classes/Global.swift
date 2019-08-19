@@ -13,7 +13,7 @@
 @_exported import Alamofire
 @_exported import SnapKit
 
-// MARK: - 常量
+/// MARK: - 常量
 // 导航栏(动态获取主要为了适配iphone X)
 var kStatusHeight: CGFloat {
     return UIApplication.shared.statusBarFrame.size.height
@@ -28,7 +28,7 @@ var pageSizeFixed: Int {
     return 20
 }
 
-// MARK: - 主线程上刷新UI
+/// MARK: - 主线程上刷新UI
 func dispatch_sync_safely_main_queue(_ block: ()->()) {
     if Thread.isMainThread {
         block()
@@ -39,7 +39,7 @@ func dispatch_sync_safely_main_queue(_ block: ()->()) {
     }
 }
 
-// 延迟调用
+/// 延时调用
 func dispatch_delay(time: TimeInterval, closure: @escaping () -> ()) {
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + time, execute: {
         closure()
