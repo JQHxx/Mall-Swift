@@ -39,6 +39,9 @@
 		5E8729B822EAB7F80035208B /* MineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E8729B622EAB7F80035208B /* MineCell.xib */; };
 		5EBBB6F622FD5815005BF393 /* EmptyViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBBB6F522FD5815005BF393 /* EmptyViewProtocol.swift */; };
 		5EBBB6F822FD58BF005BF393 /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBBB6F722FD58BF005BF393 /* DispatchQueueExtension.swift */; };
+		5EC4E52C230B83D1002F9E98 /* UIScrollView+MJRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4E52B230B83D1002F9E98 /* UIScrollView+MJRefresh.swift */; };
+		5EC4E52E230B83F3002F9E98 /* BFRefreshNormalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4E52D230B83F3002F9E98 /* BFRefreshNormalHeader.swift */; };
+		5EC4E530230B8402002F9E98 /* BFRefreshBackStateFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4E52F230B8402002F9E98 /* BFRefreshBackStateFooter.swift */; };
 		5EEA9CE422E9A160007BA06A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE322E9A160007BA06A /* UIViewExtension.swift */; };
 		5EEA9CE622E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE522E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift */; };
 		5EEA9CE822E9A70C007BA06A /* BFBaseWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CE722E9A70C007BA06A /* BFBaseWebViewVC.swift */; };
@@ -113,6 +116,9 @@
 		5E8729B622EAB7F80035208B /* MineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineCell.xib; sourceTree = "<group>"; };
 		5EBBB6F522FD5815005BF393 /* EmptyViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewProtocol.swift; sourceTree = "<group>"; };
 		5EBBB6F722FD58BF005BF393 /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
+		5EC4E52B230B83D1002F9E98 /* UIScrollView+MJRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+MJRefresh.swift"; sourceTree = "<group>"; };
+		5EC4E52D230B83F3002F9E98 /* BFRefreshNormalHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFRefreshNormalHeader.swift; sourceTree = "<group>"; };
+		5EC4E52F230B8402002F9E98 /* BFRefreshBackStateFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFRefreshBackStateFooter.swift; sourceTree = "<group>"; };
 		5EEA9CE322E9A160007BA06A /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5EEA9CE522E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFWKWebViewDelegateVC.swift; sourceTree = "<group>"; };
 		5EEA9CE722E9A70C007BA06A /* BFBaseWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFBaseWebViewVC.swift; sourceTree = "<group>"; };
@@ -332,6 +338,7 @@
 		5E6A24B022E0664300A85826 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				5EC4E52A230B83A4002F9E98 /* MJRefresh */,
 			);
 			path = ThirdPart;
 			sourceTree = "<group>";
@@ -448,6 +455,16 @@
 				5E8729B622EAB7F80035208B /* MineCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5EC4E52A230B83A4002F9E98 /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				5EC4E52B230B83D1002F9E98 /* UIScrollView+MJRefresh.swift */,
+				5EC4E52D230B83F3002F9E98 /* BFRefreshNormalHeader.swift */,
+				5EC4E52F230B8402002F9E98 /* BFRefreshBackStateFooter.swift */,
+			);
+			path = MJRefresh;
 			sourceTree = "<group>";
 		};
 		D13F8DD9DF2DC81BACAD9EEE /* Pods */ = {
@@ -695,8 +712,10 @@
 			files = (
 				5E8729A822EA8ADA0035208B /* BFBarista.swift in Sources */,
 				5EEA9CEE22E9AB53007BA06A /* DDErrorModel.swift in Sources */,
+				5EC4E52C230B83D1002F9E98 /* UIScrollView+MJRefresh.swift in Sources */,
 				5E8729AF22EAA6590035208B /* AttributedStringExtension.swift in Sources */,
 				5EEA9CF022E9AB7E007BA06A /* DDRequestModel.swift in Sources */,
+				5EC4E52E230B83F3002F9E98 /* BFRefreshNormalHeader.swift in Sources */,
 				5E6A24D822E0755100A85826 /* MainNavigationController.swift in Sources */,
 				5E6A24C422E0680400A85826 /* FunctionViewController.swift in Sources */,
 				5EEA9CE422E9A160007BA06A /* UIViewExtension.swift in Sources */,
@@ -704,6 +723,7 @@
 				5E8729B722EAB7F80035208B /* MineCell.swift in Sources */,
 				5EBBB6F822FD58BF005BF393 /* DispatchQueueExtension.swift in Sources */,
 				5E8729AC22EA8BB10035208B /* UserDefaultsExtension.swift in Sources */,
+				5EC4E530230B8402002F9E98 /* BFRefreshBackStateFooter.swift in Sources */,
 				5E8729B222EAB2970035208B /* MineHeaderView.swift in Sources */,
 				5E8729AA22EA8B360035208B /* AppKeyChain.swift in Sources */,
 				5E6A24D322E069F500A85826 /* MessageListCell.swift in Sources */,
