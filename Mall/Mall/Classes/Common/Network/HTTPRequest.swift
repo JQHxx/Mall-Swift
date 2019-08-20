@@ -81,7 +81,7 @@ extension HTTPRequest {
     
     // 处理数据
     fileprivate class func interceptResponse<T: BFRequest>(r: T, response: [String: AnyObject], requestSuccess: @escaping RequestSucceed, requestError: @escaping RequestError, requestFailure: @escaping RequestFailure) {
-        let object = DDRequestModel(jsonData: JSON(response))
+        let object = IRequestModel(jsonData: JSON(response))
         let status = object.code
         let msg = object.message
         let result = object.result
@@ -89,20 +89,20 @@ extension HTTPRequest {
         switch status {
         case 401: // Token 过期
             BFHUD.shared.hideLoadingMessage()
-            let m = DDErrorModel(status: status, message: msg)
+            let m = IErrorModel(status: status, message: msg)
             requestError(response, m)
             break
         case 200: // 请求成功
             if result {
                 requestSuccess(response)
             } else {
-                let m = DDErrorModel(status: 999999, message: msg)
+                let m = IErrorModel(status: 999999, message: msg)
                 requestError(response, m)
             }
             break
             
         default:
-            let m = DDErrorModel(status: status, message: msg)
+            let m = IErrorModel(status: status, message: msg)
             requestError(response, m)
             break
         }

@@ -14,7 +14,7 @@ typealias RequestSucceed = (_ result: [String: AnyObject]) -> ()
 /// 请求失败
 typealias RequestFailure = (_ error: Error) -> ()
 /// 请求错误回调
-typealias RequestError   = (_ result: [String: AnyObject], _ errorObject: DDErrorModel) -> ()
+typealias RequestError   = (_ result: [String: AnyObject], _ errorObject: IErrorModel) -> ()
 
 public enum ZHFHTTPMethod: Int {
     case POST = 0
@@ -134,7 +134,7 @@ class HTTPClient {
                         return
                     }
                     // 未知错误
-                    let m = DDErrorModel(status: -11211, message: "返回数据格式不正确")
+                    let m = IErrorModel(status: -11211, message: "返回数据格式不正确")
                     requestError([:], m)
                 case .failure(let error):
                     failure(error)
@@ -182,7 +182,7 @@ class HTTPClient {
                         return
                     }
                     // 未知错误
-                    let m = DDErrorModel(status: -11211, message: "返回数据格式不正确")
+                    let m = IErrorModel(status: -11211, message: "返回数据格式不正确")
                     requestError([:], m)
                 }
             case .failure(let error):

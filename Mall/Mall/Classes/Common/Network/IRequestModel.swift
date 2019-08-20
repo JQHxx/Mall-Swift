@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-class DDRequestModel {
+class IRequestModel {
     
     var code: Int = 0
     var message: String = ""

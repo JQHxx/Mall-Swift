@@ -8,7 +8,7 @@
 
 import Foundation
 
-class DDErrorModel {
+class IErrorModel {
     
     var status: Int = 0
     var message: String = ""
