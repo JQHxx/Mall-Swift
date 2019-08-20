@@ -10,9 +10,12 @@ import Foundation
 import SVProgressHUD
 import MBProgressHUD
 
-class BFunction: NSObject {
+/**
+ * 加载指示器
+ */
+class BFHUD: NSObject {
     
-    static let shared = BFunction()
+    static let shared = BFHUD()
     fileprivate(set) var toastCount = 0
     fileprivate(set) var isShow = false
     var isShowYaoYiYao = true// 是否弹窗摇一摇, 只弹一次
