@@ -23,6 +23,19 @@ var kNavBarHeight: CGFloat {
     return 44.0
 }
 
+// 屏幕尺寸
+var kScreen: CGSize {
+    return UIScreen.main.bounds.size
+}
+
+var kScreenW: CGFloat {
+    return UIScreen.main.bounds.size.width
+}
+
+var kScreenH: CGFloat {
+    return UIScreen.main.bounds.size.height
+}
+
 /// 固定的分页大小
 var pageSizeFixed: Int {
     return 20

@@ -27,7 +27,6 @@ class MineViewController: UIViewController {
             guard let `self` = self else {
                 return
             }
-            
             dispatch_delay(time: 3.0, closure: {
                 self.tableView.mj_header.endRefreshing()
             })
@@ -46,8 +45,13 @@ class MineViewController: UIViewController {
     // MARK: - Lazy load
     private lazy var tableView: UITableView = { [weak self] in
         let tableView = UITableView.init(frame: CGRect.zero, style: UITableView.Style.plain)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: String.init(describing: UITableViewCell.self))
+        // tableView.separatorInset.left = 0
+        let headerView = MineHeaderView.loadNib()
+        // headerView.frame = CGRect.init(x: 0, y: 0, width: kScreenW, height: 160)
+        tableView.tableHeaderView = headerView
+        tableView.register(UINib.init(nibName: "MineCell", bundle: nil), forCellReuseIdentifier: "MineCell")
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.tableFooterView = UIView.init()
         return tableView
     }()
@@ -61,17 +65,24 @@ extension MineViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: String.init(describing: UITableViewCell.self))
+        var cell: MineCell? = tableView.dequeueReusableCell(withIdentifier: String.init(describing: MineCell.self)) as? MineCell
         if let _ = cell {
             
         } else {
-            cell = UITableViewCell.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: String.init(describing: UITableViewCell.self))
+            cell = Bundle.main.loadNibNamed("MineCell", owner: nil, options: nil)?.last as? MineCell
         }
-        cell?.textLabel?.text = "\(indexPath.row)"
+        cell?.accessoryType = .disclosureIndicator
+        cell?.nameLabel.text = "\(indexPath.row)"
         return cell!
         
     }
     
-    
+}
+
+// MARK: - UITableViewDelegate
+extension MineViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 
