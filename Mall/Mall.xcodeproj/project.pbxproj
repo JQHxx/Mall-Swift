@@ -22,7 +22,6 @@
 		5E6A24C722E0683700A85826 /* ServerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A24C622E0683700A85826 /* ServerViewController.swift */; };
 		5E6A24CA22E0685700A85826 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A24C922E0685700A85826 /* MineViewController.swift */; };
 		5E6A24CD22E0688000A85826 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A24CC22E0688000A85826 /* MessageViewController.swift */; };
-		5E6A24D322E069F500A85826 /* MessageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A24D222E069F500A85826 /* MessageListCell.swift */; };
 		5E6A24D622E0720700A85826 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A24D522E0720700A85826 /* MainTabBarController.swift */; };
 		5E6A24D822E0755100A85826 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A24D722E0755100A85826 /* MainNavigationController.swift */; };
 		5E87299F22EA85B60035208B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E87299E22EA85B60035208B /* UIViewControllerExtension.swift */; };
@@ -52,6 +51,8 @@
 		5EEA9CF222E9ABA0007BA06A /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CF122E9ABA0007BA06A /* HTTPRequest.swift */; };
 		5EEA9CF422E9ABCC007BA06A /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CF322E9ABCC007BA06A /* HTTPClient.swift */; };
 		5EEA9CF622E9AC6C007BA06A /* BFHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA9CF522E9AC6C007BA06A /* BFHUD.swift */; };
+		5EFE7F22230D1E5A0051FCA8 /* MessageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFE7F20230D1E5A0051FCA8 /* MessageListCell.swift */; };
+		5EFE7F23230D1E5A0051FCA8 /* MessageListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EFE7F21230D1E5A0051FCA8 /* MessageListCell.xib */; };
 		DA2F430FD7B78C448D71B301 /* Pods_Mall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC051DCEE19BBBA8AB570A10 /* Pods_Mall.framework */; };
 		DF4183DF2463E920D924D427 /* Pods_MallTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B9C3BFD502872EF478C19D /* Pods_MallTests.framework */; };
 /* End PBXBuildFile section */
@@ -97,7 +98,6 @@
 		5E6A24C622E0683700A85826 /* ServerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerViewController.swift; sourceTree = "<group>"; };
 		5E6A24C922E0685700A85826 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		5E6A24CC22E0688000A85826 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
-		5E6A24D222E069F500A85826 /* MessageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListCell.swift; sourceTree = "<group>"; };
 		5E6A24D522E0720700A85826 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		5E6A24D722E0755100A85826 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		5E6A24D922E07AD300A85826 /* Mall_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mall_bridge.h; sourceTree = "<group>"; };
@@ -129,6 +129,8 @@
 		5EEA9CF122E9ABA0007BA06A /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 		5EEA9CF322E9ABCC007BA06A /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		5EEA9CF522E9AC6C007BA06A /* BFHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFHUD.swift; sourceTree = "<group>"; };
+		5EFE7F20230D1E5A0051FCA8 /* MessageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListCell.swift; sourceTree = "<group>"; };
+		5EFE7F21230D1E5A0051FCA8 /* MessageListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageListCell.xib; sourceTree = "<group>"; };
 		6F65C7D569A21834124A0F7B /* Pods_MallUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MallUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		799DA0036FB99B3DC065B43A /* Pods-Mall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mall.release.xcconfig"; path = "Target Support Files/Pods-Mall/Pods-Mall.release.xcconfig"; sourceTree = "<group>"; };
 		85F498A43D4BF6C4FD60C637 /* Pods-MallUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallUITests.debug.xcconfig"; path = "Target Support Files/Pods-MallUITests/Pods-MallUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -400,7 +402,8 @@
 		5E6A24CE22E0688C00A85826 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5E6A24D222E069F500A85826 /* MessageListCell.swift */,
+				5EFE7F20230D1E5A0051FCA8 /* MessageListCell.swift */,
+				5EFE7F21230D1E5A0051FCA8 /* MessageListCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -598,6 +601,7 @@
 				5E48614322DC27CD00A99B31 /* LaunchScreen.storyboard in Resources */,
 				5E6A24B922E0676C00A85826 /* Function.storyboard in Resources */,
 				5E6A24BD22E0678D00A85826 /* Mine.storyboard in Resources */,
+				5EFE7F23230D1E5A0051FCA8 /* MessageListCell.xib in Resources */,
 				5E6A24BB22E0677C00A85826 /* Message.storyboard in Resources */,
 				5E48614022DC27CD00A99B31 /* Assets.xcassets in Resources */,
 			);
@@ -718,6 +722,7 @@
 				5EC4E52E230B83F3002F9E98 /* BFRefreshNormalHeader.swift in Sources */,
 				5E6A24D822E0755100A85826 /* MainNavigationController.swift in Sources */,
 				5E6A24C422E0680400A85826 /* FunctionViewController.swift in Sources */,
+				5EFE7F22230D1E5A0051FCA8 /* MessageListCell.swift in Sources */,
 				5EEA9CE422E9A160007BA06A /* UIViewExtension.swift in Sources */,
 				5E87299F22EA85B60035208B /* UIViewControllerExtension.swift in Sources */,
 				5E8729B722EAB7F80035208B /* MineCell.swift in Sources */,
@@ -726,7 +731,6 @@
 				5EC4E530230B8402002F9E98 /* BFRefreshBackStateFooter.swift in Sources */,
 				5E8729B222EAB2970035208B /* MineHeaderView.swift in Sources */,
 				5E8729AA22EA8B360035208B /* AppKeyChain.swift in Sources */,
-				5E6A24D322E069F500A85826 /* MessageListCell.swift in Sources */,
 				5EEA9CF622E9AC6C007BA06A /* BFHUD.swift in Sources */,
 				5EEA9CEC22E9AAF5007BA06A /* API.swift in Sources */,
 				5E8729A622EA8A3A0035208B /* BFNameSpace.swift in Sources */,
