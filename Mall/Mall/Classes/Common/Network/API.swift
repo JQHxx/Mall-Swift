@@ -17,4 +17,6 @@ struct API {
 // MARK: - 其他业务
 extension API {
     
+    // 消息列表
+    static let messageList = "/messageList"
 }
