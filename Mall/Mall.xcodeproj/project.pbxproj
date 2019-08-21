@@ -346,7 +346,7 @@
 		5E6A24B022E0664300A85826 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
-				5EC4E52A230B83A4002F9E98 /* MJRefresh */,
+				5EC4E52A230B83A4002F9E98 /* MJRefreshExt */,
 			);
 			path = ThirdPart;
 			sourceTree = "<group>";
@@ -469,14 +469,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		5EC4E52A230B83A4002F9E98 /* MJRefresh */ = {
+		5EC4E52A230B83A4002F9E98 /* MJRefreshExt */ = {
 			isa = PBXGroup;
 			children = (
 				5EC4E52B230B83D1002F9E98 /* UIScrollView+MJRefresh.swift */,
 				5EC4E52D230B83F3002F9E98 /* BFRefreshNormalHeader.swift */,
 				5EC4E52F230B8402002F9E98 /* BFRefreshBackStateFooter.swift */,
 			);
-			path = MJRefresh;
+			path = MJRefreshExt;
 			sourceTree = "<group>";
 		};
 		D13F8DD9DF2DC81BACAD9EEE /* Pods */ = {
