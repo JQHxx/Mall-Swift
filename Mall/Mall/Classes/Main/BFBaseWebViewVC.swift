@@ -68,7 +68,7 @@ class BFBaseWebViewVC: UIViewController {
         userContent.addUserScript(wkUScript)
         let delegateController = BFWKWebViewDelegateVC()
         delegateController.delegate = self
-        userContent.add(delegateController, name: "DigitalCampusWebApp")
+        userContent.add(delegateController, name: "Native")
         return userContent
         }()
     
