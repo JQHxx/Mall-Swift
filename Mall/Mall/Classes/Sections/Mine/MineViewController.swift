@@ -27,13 +27,18 @@ class MineViewController: UIViewController {
             guard let `self` = self else {
                 return
             }
-            self.tableView.mj_header.endRefreshing()
+            
+            dispatch_delay(time: 3.0, closure: {
+                self.tableView.mj_header.endRefreshing()
+            })
             
         }) { [weak self] in
             guard let `self` = self else {
                 return
             }
-            self.tableView.mj_footer.endRefreshing()
+            dispatch_delay(time: 3.0, closure: {
+                self.tableView.mj_footer.endRefreshing()
+            })
         }
     }
     
