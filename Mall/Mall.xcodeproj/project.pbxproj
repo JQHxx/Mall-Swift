@@ -354,7 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				5EBDA160230FA5D100F30C00 /* SwiftyJSON */,
-				5EBDA15D230F842C00F30C00 /* Log */,
+				5EBDA15D230F842C00F30C00 /* Logger */,
 				5EC4E52A230B83A4002F9E98 /* MJRefreshExt */,
 			);
 			path = ThirdPart;
@@ -478,12 +478,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		5EBDA15D230F842C00F30C00 /* Log */ = {
+		5EBDA15D230F842C00F30C00 /* Logger */ = {
 			isa = PBXGroup;
 			children = (
 				5EBDA15E230F844C00F30C00 /* Logger.swift */,
 			);
-			path = Log;
+			path = Logger;
 			sourceTree = "<group>";
 		};
 		5EBDA160230FA5D100F30C00 /* SwiftyJSON */ = {
