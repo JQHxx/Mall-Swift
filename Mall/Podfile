@@ -22,6 +22,8 @@ target 'Mall' do
   pod 'TYPagerController', '~> 2.1.2'
   pod 'KeychainSwift', '~> 16.0.1'
   pod 'XCGLogger', '~> 7.0.0'
+  # 崩溃日志收集
+  pod 'Bugly'
   
   # 免费UI调试工具 https://lookin.work/
   pod 'LookinServer', :configurations => ['Debug']
