@@ -41,6 +41,9 @@
 		5EBDA15F230F844C00F30C00 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBDA15E230F844C00F30C00 /* Logger.swift */; };
 		5EBDA162230FA61B00F30C00 /* JSONMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBDA161230FA61B00F30C00 /* JSONMappable.swift */; };
 		5EBDA164230FC09E00F30C00 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBDA163230FC09E00F30C00 /* UIImageExtension.swift */; };
+		5EBDA166230FD4F900F30C00 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBDA165230FD4F900F30C00 /* UIColorExtension.swift */; };
+		5EBDA168230FD58600F30C00 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBDA167230FD58600F30C00 /* StringExtension.swift */; };
+		5EBDA16A230FD5FC00F30C00 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBDA169230FD5FC00F30C00 /* IntExtension.swift */; };
 		5EC4E52C230B83D1002F9E98 /* UIScrollView+MJRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4E52B230B83D1002F9E98 /* UIScrollView+MJRefresh.swift */; };
 		5EC4E52E230B83F3002F9E98 /* BFRefreshNormalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4E52D230B83F3002F9E98 /* BFRefreshNormalHeader.swift */; };
 		5EC4E530230B8402002F9E98 /* BFRefreshBackStateFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4E52F230B8402002F9E98 /* BFRefreshBackStateFooter.swift */; };
@@ -125,6 +128,9 @@
 		5EBDA15E230F844C00F30C00 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		5EBDA161230FA61B00F30C00 /* JSONMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMappable.swift; sourceTree = "<group>"; };
 		5EBDA163230FC09E00F30C00 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		5EBDA165230FD4F900F30C00 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		5EBDA167230FD58600F30C00 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		5EBDA169230FD5FC00F30C00 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		5EC4E52B230B83D1002F9E98 /* UIScrollView+MJRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+MJRefresh.swift"; sourceTree = "<group>"; };
 		5EC4E52D230B83F3002F9E98 /* BFRefreshNormalHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFRefreshNormalHeader.swift; sourceTree = "<group>"; };
 		5EC4E52F230B8402002F9E98 /* BFRefreshBackStateFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFRefreshBackStateFooter.swift; sourceTree = "<group>"; };
@@ -346,6 +352,9 @@
 				5EBBB6F522FD5815005BF393 /* EmptyViewProtocol.swift */,
 				5EBBB6F722FD58BF005BF393 /* DispatchQueueExtension.swift */,
 				5EBDA163230FC09E00F30C00 /* UIImageExtension.swift */,
+				5EBDA165230FD4F900F30C00 /* UIColorExtension.swift */,
+				5EBDA167230FD58600F30C00 /* StringExtension.swift */,
+				5EBDA169230FD5FC00F30C00 /* IntExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -753,6 +762,7 @@
 				5EC4E52C230B83D1002F9E98 /* UIScrollView+MJRefresh.swift in Sources */,
 				5E8729AF22EAA6590035208B /* AttributedStringExtension.swift in Sources */,
 				5EBDA164230FC09E00F30C00 /* UIImageExtension.swift in Sources */,
+				5EBDA16A230FD5FC00F30C00 /* IntExtension.swift in Sources */,
 				5EEA9CF022E9AB7E007BA06A /* IRequestModel.swift in Sources */,
 				5EC4E52E230B83F3002F9E98 /* BFRefreshNormalHeader.swift in Sources */,
 				5E6A24D822E0755100A85826 /* MainNavigationController.swift in Sources */,
@@ -760,6 +770,7 @@
 				5EFE7F22230D1E5A0051FCA8 /* MessageListCell.swift in Sources */,
 				5EBDA162230FA61B00F30C00 /* JSONMappable.swift in Sources */,
 				5EEA9CE422E9A160007BA06A /* UIViewExtension.swift in Sources */,
+				5EBDA168230FD58600F30C00 /* StringExtension.swift in Sources */,
 				5E87299F22EA85B60035208B /* UIViewControllerExtension.swift in Sources */,
 				5E8729B722EAB7F80035208B /* MineCell.swift in Sources */,
 				5EBBB6F822FD58BF005BF393 /* DispatchQueueExtension.swift in Sources */,
@@ -777,6 +788,7 @@
 				5EEA9CEA22E9A8AF007BA06A /* BFStoreboardName.swift in Sources */,
 				5EEA9CE622E9A6C5007BA06A /* BFWKWebViewDelegateVC.swift in Sources */,
 				5E6A24B522E0668A00A85826 /* Global.swift in Sources */,
+				5EBDA166230FD4F900F30C00 /* UIColorExtension.swift in Sources */,
 				5E8729A422EA87930035208B /* RegisterViewController.swift in Sources */,
 				5E48613922DC27CA00A99B31 /* AppDelegate.swift in Sources */,
 				5EFE7F27230D216C0051FCA8 /* MessageListViewModel.swift in Sources */,
