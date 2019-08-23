@@ -64,6 +64,7 @@ extension MineViewController: UITableViewDataSource {
         return 50
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: MineCell? = tableView.dequeueReusableCell(withIdentifier: String.init(describing: MineCell.self)) as? MineCell
         if let _ = cell {
@@ -81,6 +82,11 @@ extension MineViewController: UITableViewDataSource {
 
 // MARK: - UITableViewDelegate
 extension MineViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
