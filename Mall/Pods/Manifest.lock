@@ -1,8 +1,8 @@
 PODS:
   - Alamofire (4.8.2)
-  - CYLTabBarController (1.28.1):
-    - CYLTabBarController/Core (= 1.28.1)
-  - CYLTabBarController/Core (1.28.1)
+  - CYLTabBarController (1.28.3):
+    - CYLTabBarController/Core (= 1.28.3)
+  - CYLTabBarController/Core (1.28.3)
   - IQKeyboardManagerSwift (6.4.0)
   - KeychainSwift (16.0.1)
   - Kingfisher (4.10.1)
@@ -35,7 +35,7 @@ DEPENDENCIES:
   - TYPagerController (~> 2.1.2)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - CYLTabBarController
     - IQKeyboardManagerSwift
@@ -53,7 +53,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  CYLTabBarController: 00728db48581aac6e1160a793b397d3accf44249
+  CYLTabBarController: cd14c6260a38337600737873a57b3114c7065a8e
   IQKeyboardManagerSwift: ed9b04ee0e3067ffba543283462d619f944b05e5
   KeychainSwift: 4209611373ca4a098e09b1e547eebd87c544dcc4
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
@@ -67,6 +67,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   TYPagerController: 262556ecef99986d26ed77fb1288a198ed42f4af
 
-PODFILE CHECKSUM: f8182a8d0e851057923abd61b0a4426a148230f9
+PODFILE CHECKSUM: 997833ad26a17e2ba276ab35ca42cb84e7349a71
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.0.beta.1

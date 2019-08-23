@@ -2,6 +2,11 @@ platform :ios, '8.0'
 use_frameworks!
 inhibit_all_warnings!
 
+source 'https://github.com/CocoaPods/Specs.git'
+# 私有仓库可以使用cdn加速
+# source 'https://github.com/artsy/Specs.git'
+# source 'https://cdn.cocoapods.org/'
+
 target 'Mall' do
 
   pod 'CYLTabBarController', '~> 1.28.1'

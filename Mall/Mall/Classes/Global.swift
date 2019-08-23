@@ -52,6 +52,14 @@ func dispatch_sync_safely_main_queue(_ block: ()->()) {
     }
 }
 
+// MARK: - 图片占位图
+struct Placeholder {
+    
+    static let loding: String = ""
+    static let error: String = ""
+    static let user: String = ""
+}
+
 /// 延时调用
 func dispatch_delay(time: TimeInterval, closure: @escaping () -> ()) {
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + time, execute: {
