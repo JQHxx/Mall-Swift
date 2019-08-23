@@ -42,6 +42,8 @@ class FunctionViewController: UIViewController {
         }
         
         debugPrint(JSON.init(parseJSON: jsonString))
+        logger.debug("一条verbose级别消息：程序执行时最详细的信息。")
+        logger.debug("一条verbose级别消息：程序执行时最详细的信息。")
         
         
 //        let dict = ["name": "123"]

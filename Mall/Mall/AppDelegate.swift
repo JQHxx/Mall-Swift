@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        logger.debug("一条verbose级别消息：程序执行时最详细的信息。")
+        
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
         setupRootViewController()
