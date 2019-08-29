@@ -8,11 +8,17 @@
 
 import Foundation
 
+
+
 struct Log {
+    
+    static let infoDictionary = Bundle.main.infoDictionary ?? [:]
+    static let appName = infoDictionary["CFBundleDisplayName"] //程序名称
+    
     private static func _log<T>(_ title: String, _ msg: T, _ file: NSString,
                                 _ fn: String, _ line: Int) {
         #if DEBUG
-        print("「 Mall 」\(title) \(file.lastPathComponent) >> \(line) >> \(fn) ：\(msg)")
+        print("「 \(appName ?? "") 」\(title) \(file.lastPathComponent) \(line)行 >> \(fn) =>：\(msg)")
         #endif
     }
     
