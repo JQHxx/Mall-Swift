@@ -22,7 +22,7 @@ class BFRefreshNormalHeader: MJRefreshNormalHeader {
     
     private func setupUI() {
         self.stateLabel.textColor = UIColor.init(red: 94/255.0, green: 219/255.0, blue: 255/255.0, alpha: 1.0)
-       self.stateLabel.isHidden = true
+        self.stateLabel.isHidden = true
         
         for view in self.subviews {
             if view.isKind(of: UIActivityIndicatorView.self) {
