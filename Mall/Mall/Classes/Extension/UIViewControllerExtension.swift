@@ -50,9 +50,7 @@ extension UIViewController {
             
         } else if let presentedController = viewController?.presentedViewController {
             return self.topViewController(presentedController)
-            
         }
-        
         return viewController
     }
 }

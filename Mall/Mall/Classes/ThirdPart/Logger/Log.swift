@@ -18,7 +18,7 @@ struct Log {
     private static func _log<T>(_ title: String, _ msg: T, _ file: NSString,
                                 _ fn: String, _ line: Int) {
         #if DEBUG
-        print("「 \(appName ?? "") 」\(title) \(file.lastPathComponent) \(line)行 >> \(fn) =>：\(msg) \(title)")
+        print("「 \(appName ?? "") 」\(title) \(file.lastPathComponent) \(line)行 >> \(fn) => \(msg) \(title)")
         #endif
     }
     
