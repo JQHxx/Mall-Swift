@@ -9,6 +9,14 @@
 import Foundation
 import SwiftyJSON
 
+/**
+ 使用说明：
+ 1、遵守 JSONMappable
+ 2、重写init() {}
+ 3、JSON 对象转 String json.rawString()
+ 4、JSON 对象转 data json.rawData()
+ */
+
 // A string which can be transformed to JSON
 public typealias JSONString = String
 
