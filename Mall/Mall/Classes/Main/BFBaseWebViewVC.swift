@@ -68,7 +68,9 @@ class BFBaseWebViewVC: UIViewController {
         userContent.addUserScript(wkUScript)
         let delegateController = BFWKWebViewDelegateVC()
         delegateController.delegate = self
+        // 可以注册多个，方便拦截
         userContent.add(delegateController, name: "Native")
+        // userContent.add(delegateController, name: "Native")
         return userContent
         }()
     
