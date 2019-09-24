@@ -47,3 +47,5 @@ post_install do |installer|
     end
   end
 end
+
+# Swift常用框架：https://www.jianshu.com/p/c9dd0b35281a
